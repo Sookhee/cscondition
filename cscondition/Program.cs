@@ -35,16 +35,13 @@ namespace cscondition
             {
                 Console.WriteLine("아침밥 먹을 시간입니다!");
             }
+            else if(DateTime.Now.Hour < 15)
+            {
+               Console.WriteLine("점심밥 먹을 시간입니다!");
+            }
             else
             {
-                if(DateTime.Now.Hour < 15)
-                {
-                    Console.WriteLine("점심밥 먹을 시간입니다!");
-                }
-                else
-                {
-                    Console.WriteLine("저녁밥 먹을 시간입니다!");
-                }
+                Console.WriteLine("저녁밥 먹을 시간입니다!");
             }
         }
     }
