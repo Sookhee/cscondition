@@ -158,6 +158,13 @@ namespace cscondition
             {
                 Console.WriteLine();
             }
+
+            // 실습일지 4번 예제 실습
+            x = 15;
+            if(x > 10 && x < 20)
+            {
+                Console.WriteLine("조건에 맞습니다.");
+            }
         }
     }
 }
