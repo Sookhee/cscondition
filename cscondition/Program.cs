@@ -87,6 +87,8 @@ namespace cscondition
             Console.WriteLine(input % 2 == 0 ? "짝수입니다" : "홀수입니다");
 
             //조건문 조건에 메서드 사용하기
+
+            //Contains
             Console.WriteLine("COM : 안녕하세요^^? ");
             Console.Write("나 : ");
             String line = Console.ReadLine();
@@ -98,6 +100,39 @@ namespace cscondition
             {
                 Console.WriteLine("COM : 인사 안해요? :(");
             }
+
+            //Key
+
+            ConsoleKeyInfo info = Console.ReadKey();
+            switch (info.Key) {
+                case ConsoleKey.UpArrow:
+                    Console.WriteLine("위로 이동");
+                    break;
+                case ConsoleKey.DownArrow:
+                    Console.WriteLine("아래로 이동");
+                    break;
+                case ConsoleKey.LeftArrow:
+                    Console.WriteLine("왼쪽으로 이동");
+                    break;
+                case ConsoleKey.RightArrow:
+                    Console.WriteLine("오른쪽으로 이동");
+                    break;
+                default:
+                    Console.WriteLine("잘못 누르셨습니다.");
+                    //이 안에 switch문을 한번 더 쓸 수도 있음
+                    break;
+            }
+
+            switch (info.KeyChar)
+            {
+                case (char)38:
+                    Console.WriteLine("위로 이동");
+                    break;
+                case '가':
+                    Console.WriteLine("가");
+                    break;
+            }
+
         }
     }
 }
