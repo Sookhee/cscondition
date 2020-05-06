@@ -103,6 +103,7 @@ namespace cscondition
 
             //Key
 
+            Console.WriteLine("방향키 입력 : ");
             ConsoleKeyInfo info = Console.ReadKey();
             switch (info.Key) {
                 case ConsoleKey.UpArrow:
@@ -133,6 +134,30 @@ namespace cscondition
                     break;
             }
 
+
+            // 실습일지 3번 예제 실습
+            int x, y;
+
+            //Console.Write("x : ");
+            //x = int.Parse(Console.ReadLine());
+            //Console.Write("y : ");
+            //y = int.Parse(Console.ReadLine());
+
+            //x = 2; y = 10;
+            //x = 1; y = 4;
+            x = 10; y = 2;
+
+            if (x > 4)
+            {
+                if(y > 2)
+                {
+                    Console.WriteLine(x * y);
+                }
+            }
+            else
+            {
+                Console.WriteLine();
+            }
         }
     }
 }
