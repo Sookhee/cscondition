@@ -10,15 +10,34 @@ namespace cscondition
     {
         static void Main(string[] args)
         {
+            // 홀수 짝수 구분하기
             Console.Write("숫자 입력 : ");
             int input = int.Parse(Console.ReadLine());
             if (input % 2 == 0)
             {
                 Console.WriteLine("짝수 입니다 :D");
             }
-            if(input % 2 == 1)
+            else
             {
                 Console.WriteLine("홀수 입니다 :D");
+            }
+
+            //현재 시간 구하기
+            Console.WriteLine("Year : " + DateTime.Now.Year);
+            Console.WriteLine("Month : " + DateTime.Now.Month);
+            Console.WriteLine("Day : " + DateTime.Now.Day);
+            Console.WriteLine("Hour : " + DateTime.Now.Hour);
+            Console.WriteLine("Minute : " + DateTime.Now.Minute);
+            Console.WriteLine("Second : " + DateTime.Now.Second);
+
+            //오전과 오후 구분하기
+            if(DateTime.Now.Hour < 12)
+            {
+                Console.WriteLine("오전입니다");
+            }
+            else
+            {
+                Console.WriteLine("오후입니다");
             }
         }
     }
